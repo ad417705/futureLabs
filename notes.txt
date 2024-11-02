@@ -1,3 +1,13 @@
+New Adds: 
+
+    1. Added Dark & Light theme
+
+    2. Added a better GUI 
+
+Bugs: 
+
+    1. Dark/ light theme is not working correctly on the first try but does work after the first try
+
 Problems: 
 
     1. What do we do if the scores are the same? 
@@ -6,13 +16,9 @@ Enhancements:
 
     1. How can I make this look better?
 
-    2. How can I embbed these files in a larger application?
+    2. How can I embed these files in a larger application?
 
 Questions to add: 
-
-    1. [Placeholder]
-
-Logic Issues: 
 
     1. [Placeholder]
 
