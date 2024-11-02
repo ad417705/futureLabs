@@ -1,0 +1,48 @@
+[
+    {
+        "question": "How do you approach problem-solving?",
+        "answers": {
+            "A": ["Logical and structured", "Analytical"],
+            "B": ["Intuitive and out-of-the-box", "Creative"],
+            "C": ["Collaborative and communicative", "Social"],
+            "D": ["Efficient and goal-oriented", "Practical"]
+        }
+    },
+    {
+        "question": "Which activity sounds most enjoyable to you?",
+        "answers": {
+            "A": ["Reading a book on philosophy", "Analytical"],
+            "B": ["Painting or crafting", "Creative"],
+            "C": ["Attending a social gathering", "Social"],
+            "D": ["Organizing a project or task", "Practical"]
+        }
+    },
+    {
+        "question": "Are you single?",
+        "answers": {
+            "A": ["Maybe", "Analytical"],
+            "B": ["Yeah", "Creative"],
+            "C": ["No", "Social"],
+            "D": ["Not for me", "Practical"]
+        }
+    },
+    {
+        "question": "Where do you want to be in 10 years?",
+        "answers": {
+            "A": ["Making a lot of money", "Analytical"],
+            "B": ["Traveling the world", "Creative"],
+            "C": ["Energetic and partying", "Social"],
+            "D": ["A cozy house", "Practical"]
+        }
+    },
+    {
+        "question": "How do you feel about your future?",
+        "answers": {
+            "A": ["Scared", "Analytical"],
+            "B": ["Excited", "Creative"],
+            "C": ["Flowy", "Social"],
+            "D": ["Nervous", "Practical"]
+        }
+    }
+    
+]
