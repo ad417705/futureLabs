@@ -67,11 +67,34 @@ class PersonalityTest:
 
     def display_result(self):
         final_personality = max(self.personality_scores, key=self.personality_scores.get)
-        result_text = f"Your overall personality type is: {final_personality}\n\nDetailed Scores:\n"
+        
+        # Create a new window for the results
+        result_window = ctk.CTkToplevel(self.root)
+        result_window.title("Test Result")
+        result_window.geometry("400x300")
+        
+        # Result header
+        result_header = ctk.CTkLabel(result_window, text="Your Personality Type", font=("Helvetica", 16, "bold"))
+        result_header.pack(pady=10)
+
+        # Display the final personality
+        personality_label = ctk.CTkLabel(result_window, text=final_personality, font=("Helvetica", 14))
+        personality_label.pack(pady=5)
+
+        # Display detailed scores
+        score_frame = ctk.CTkFrame(result_window)
+        score_frame.pack(pady=10)
+
         for personality, score in self.personality_scores.items():
-            result_text += f"{personality}: {score} points\n"
-        messagebox.showinfo("Test Result", result_text)  # Use tkinter's messagebox
-        self.root.quit()
+            score_label = ctk.CTkLabel(score_frame, text=f"{personality}: {score} points", font=("Arial", 12))
+            score_label.pack(anchor="w")
+
+        # Close button
+        close_button = ctk.CTkButton(result_window, text="Close", command=result_window.destroy)
+        close_button.pack(pady=10)
+
+        # Disable the main window until the result window is closed
+        self.root.wait_window(result_window)
 
     def toggle_theme(self, dark_mode=None):
         # Check the current mode of the switch
